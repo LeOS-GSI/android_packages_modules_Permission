@@ -29,7 +29,7 @@
         <item name="android:layout_width">32dp</item>
         <item name="android:layout_height">32dp</item>
         <item name="android:layout_marginBottom">12dp</item>
-        <item name="android:tint">@android:color/system_accent1_600</item>
+        <item name="android:tint">?android:attr/colorAccent</item>
         <item name="android:scaleType">fitCenter</item>
     </style>
 
@@ -51,7 +51,7 @@
         <item name="android:layout_marginBottom">2dp</item>
         <item name="android:fontFamily">google-sans-medium</item>
         <item name="android:textSize">14sp</item>
-        <item name="android:textColor">@android:color/system_neutral1_900</item>
+        <item name="android:textColor">?android:attr/colorBackground</item>
         <item name="android:background">@drawable/grant_permissions_buttons_top</item>
     </style>
 
@@ -65,7 +65,7 @@
         <item name="android:layout_marginBottom">2dp</item>
         <item name="android:fontFamily">google-sans-medium</item>
         <item name="android:textSize">14sp</item>
-        <item name="android:textColor">@android:color/system_neutral1_900</item>
+        <item name="android:textColor">?android:attr/colorBackground</item>
         <item name="android:background">@drawable/grant_permissions_buttons_middle</item>
     </style>
 
@@ -79,7 +79,7 @@
         <item name="android:layout_marginBottom">2dp</item>
         <item name="android:fontFamily">google-sans-medium</item>
         <item name="android:textSize">14sp</item>
-        <item name="android:textColor">@android:color/system_neutral1_900</item>
+        <item name="android:textColor">?android:attr/colorBackground</item>
         <item name="android:background">@drawable/grant_permissions_buttons_bottom</item>
     </style>
 
