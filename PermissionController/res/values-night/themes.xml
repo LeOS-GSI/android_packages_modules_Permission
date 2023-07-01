@@ -28,7 +28,7 @@
 
     <style name="Theme.PermissionGrantDialog"
            parent="@android:style/Theme.DeviceDefault.Dialog">
-        <item name="android:colorBackground">@*android:color/background_floating_material_dark</item>
+        <item name="android:colorBackground">@color/google_grey_800</item>
         <item name="android:divider">@drawable/list_divider</item>
     </style>
 

@@ -18,11 +18,7 @@
 
 <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/extended_fab"
     android:theme="@style/Theme.MaterialComponents.DayNight"
     android:visibility="gone"
-    app:backgroundTint="@*android:color/accent_device_default"
-    app:iconTint="?android:attr/colorBackground"
-    android:textColor="?android:attr/colorBackground"
     style="@style/PermissionFrameExtendedFloatingActionButton" />

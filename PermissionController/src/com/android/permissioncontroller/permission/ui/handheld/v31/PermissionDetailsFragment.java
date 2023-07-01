@@ -162,7 +162,18 @@ public class PermissionDetailsFragment extends SettingsWithLargeHeader implement
         // Load the background tint color from the application theme
         // rather than the Material Design theme
         Activity activity = getActivity();
+        ColorStateList backgroundColor = activity.getColorStateList(
+                android.R.color.system_accent3_100);
+        extendedFab.setBackgroundTintList(backgroundColor);
         extendedFab.setText(R.string.manage_permission);
+        boolean isUiModeNight = (activity.getResources().getConfiguration().uiMode
+                & Configuration.UI_MODE_NIGHT_MASK) == Configuration.UI_MODE_NIGHT_YES;
+        int textColorAttr = isUiModeNight ? android.R.attr.textColorPrimaryInverse
+                : android.R.attr.textColorPrimary;
+        TypedArray typedArray = activity.obtainStyledAttributes(new int[] { textColorAttr });
+        ColorStateList textColor = typedArray.getColorStateList(0);
+        typedArray.recycle();
+        extendedFab.setTextColor(textColor);
         extendedFab.setIcon(activity.getDrawable(R.drawable.ic_settings_outline));
         extendedFab.setVisibility(View.VISIBLE);
         extendedFab.setOnClickListener(view -> {
